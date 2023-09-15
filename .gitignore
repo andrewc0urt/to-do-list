@@ -161,3 +161,6 @@ cython_debug/
 
 # Important settings.py file containing secret key
 /django_project/settings.py
+
+# Ignore macOS .DS_Store files
+.DS_Store
