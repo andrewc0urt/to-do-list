@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block title %}To Do List - Login{% endblock %} <!-- Override the <title> in the head of base.html-->
+{% load static %}
+
+{% block content %}
+
+    <link rel="stylesheet" href="{% static 'user_login.css' %}">
+
+    <div class="login-header-container">
+        <h2>Welcome Back!</h2>
+        <h4>Please take a moment to log in.</h4>
+    </div>
+
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert {{ message.tags }} custom-alert show" role="alert" data-timeout="30000">
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
+
+
+    <div id="login-form-container">
+        <form method="POST">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="username">Email address</label>
+                <input type="email" class="form-control" id="username" name="username" aria-describedby="username" placeholder="Enter email" value="{{ request.POST.username }}" autocomplete="off" required>
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
+            </div>
+
+            <div class="login-actions-container">
+                <button type="submit" class="btn btn-primary" id="login-button">Log In</button>
+                <p>Don't have an account? <a href="{% url 'user_signup' %}">Create one!</a></p>
+            </div>
+        </form>
+    </div>
+
+{% endblock %}
