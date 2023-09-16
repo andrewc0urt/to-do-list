@@ -1,4 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.contrib import messages
+from django.contrib.auth import logout
 
 # Create your views here.
 
@@ -13,4 +15,6 @@ def user_login(request):
     return render(request, "user_login.html", {})
 
 def user_logout(request):
-    return render(request, "user_login.html")
+    logout(request)
+    messages.info(request, "You've successfully logged out. Have a great day!")
+    return redirect('user_login')
