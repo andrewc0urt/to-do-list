@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %}To Do List - Edit Item{% endblock %} <!-- Override the <title> in the head of base.html-->
+{% load static %}
+
+{% block content %}
+
+  <link rel="stylesheet" href="{% static 'styles/edit.css' %}">
+
+  {% if item %}
+  <form class="d-flex" role="search" method="POST">
+      {% csrf_token %}
+    <!-- <input class="form-control me-2" type="search" placeholder="{{item.item}}" value="{{item.item}}" aria-label="Search" name="item">
+    
+    <input type="hidden" value="{{ item.completed}}" name="completed">
+
+    <button class="btn btn-outline-success edit-button" type="submit">Edit Item</button> -->
+    <div class="custom-input-group">
+        <input class="form-control me-2 custom-input" type="search" placeholder="{{item.item}}" value="{{item.item}}" aria-label="Search" name="item">
+    
+        <input type="hidden" value="{{ item.completed}}" name="completed">
+
+        <button class="btn btn-outline-success custom-button" type="submit">
+            <div id="edit-item-text-container">
+                Edit Item
+            </div>
+        </button>
+    </div>
+  </form>
+
+  {% endif %}
+
+  <div class="go-back-link">
+    <a href="{% url 'home' %}">Go back</a>
+  </div>
+
+{% endblock %}
