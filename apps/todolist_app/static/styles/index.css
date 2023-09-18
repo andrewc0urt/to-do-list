@@ -1,0 +1,73 @@
+/* FORM Styling */
+
+.date-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date-container a {
+    text-decoration: none;
+    color: #0d6efd;
+    font-weight: 400;
+}
+
+.date-container a:visited {
+    text-decoration: none;
+    color: #0d6efd;
+}
+
+form {
+    margin-bottom: 1rem;
+}
+
+.custom-input-group {
+    width: 90%;
+    display: flex;
+}
+
+.custom-input {
+    /* font-style: italic; */
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.custom-input::placeholder {
+    font-style: italic;
+    font-size: 18px;
+}
+
+.custom-input:focus {
+    box-shadow: unset;
+}
+
+.custom-button {
+    width: 20%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: -2px;
+    border-color: #dee2e6;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-button:hover {
+    background-color: #778899;
+}
+
+#add-item-text-container {
+    margin-left: 0.25rem;
+}
+
+
+/* Put a line through To-Do List item if it's marked as completed */
+.to-do-list-item {
+    text-decoration: line-through;
+}
+
+/* Remove underlines from link items */
+.row-item {
+    text-decoration: none;
+}
