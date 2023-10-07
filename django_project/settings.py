@@ -147,8 +147,11 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # if additional directories for collecting static files are required.
 # For now, they remain commented out and unused.
 
+# STATICFILES_DIRS = [
+#     os.path.join(BASE_DIR, 'apps/todolist_app/static/styles'),
+# ]
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'apps/todolist_app/static/styles'),
+    os.path.join(BASE_DIR, 'apps/todolist_app/static'),
 ]
 
 # Use WhiteNoise to serve compressed and optimized static files in production.
