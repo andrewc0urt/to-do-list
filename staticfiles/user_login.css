@@ -1,0 +1,61 @@
+.login-header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+#login-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#login-form-container form {
+    width: 40%;
+}
+
+.form-group {
+    margin-bottom: 0.5rem;
+}
+
+.form-group input::placeholder {
+    font-size: 0.9rem;
+}
+
+.login-header-container h4 {
+    font-size: 0.85rem;
+}
+
+#emailHelp {
+    font-size: 0.8rem;
+}
+
+.login-actions-container {
+    display: flex;
+    align-items: baseline;
+    margin-top: 1rem;
+}
+
+#login-button {
+    margin-right: 0.5rem;
+}
+
+.login-actions-container p {
+    font-size: 0.9rem;
+}
+
+.login-actions-container a {
+    text-decoration: none;
+    color: #0D6EFD;
+    font-weight: 500;
+}
+
+
+.login-actions-container a:visited { /* Keep the Sign Up link blue after visiting */
+    color: #0D6EFD;
+    font-weight: 500;
+}
+

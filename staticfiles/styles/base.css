@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
+/* NAVBAR styling */
+
+.nav-title {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+#my-nav {
+    /* background-image: url('/static/navbar-bg-image.png'); */
+    background-color: #EFEAE6;
+}
+
+#my-nav {
+    padding-top: 2rem; 
+    padding-bottom: 2rem;
+}
+.navbar-brand {
+    margin: 0 auto;
+}
+
+a.navbar-brand {
+    font-size: 2.5rem;
+}
+
+/* All navbar button to fill up width required */
+.custom-button {
+    width: 100%;
+}
