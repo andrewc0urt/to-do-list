@@ -1,0 +1,52 @@
+.signup-header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.signup-header-container h4 {
+    font-size: 0.85rem;
+}
+
+.signup-header-container p {
+    font-size: 0.9rem;
+}
+
+.signup-header-container a {
+    text-decoration: none;
+    color: #0D6EFD;
+    font-weight: 500;
+}
+
+
+#signup-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+#signup-form-container form {
+    width: 40%;
+}
+
+
+.login-actions-container a:visited { /* Keep the Log In link blue after visiting */
+    color: #0D6EFD;
+    font-weight: 500;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group input::placeholder {
+    font-size: 0.9rem;
+}
+
+#passwordRequirements ul {
+    padding-top: 5px;
+}

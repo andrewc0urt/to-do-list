@@ -1,0 +1,53 @@
+/* Style for the page to edit a To-Do List item */
+
+form {
+    margin-bottom: 0.5rem;
+}
+
+.custom-input-group {
+    width: 90%;
+    display: flex;
+}
+
+.custom-input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.custom-input:focus {
+    box-shadow: unset;
+}
+
+#edit-item-text-container {
+    margin-left: 0.25rem;
+}
+
+.custom-button {
+    width: 15%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: -8px;
+    border-color: #dee2e6;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.go-back-link {
+    display: flex;
+    justify-content: flex-start;
+    /* margin-top: 1rem; */
+}
+
+.go-back-link a{
+    text-decoration: none;
+    font-weight: 400;
+    color: #0d6efd;
+}
+
+.go-back-link a:visited {
+    text-decoration: none;
+    font-weight: 400;
+    color: #0d6efd;
+}
