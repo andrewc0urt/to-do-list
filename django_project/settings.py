@@ -27,7 +27,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+# DEBUG = False
+
+# Attempt to fix the 500 error when the app is deployed with DEBUG = False
+DEBUG = os.environ.get('DEBUG')
 
 # List of allowed hostnames and IP addresses that can access this Django app.
 # Update this list with your app's domain name when deploying on Heroku.
