@@ -26,6 +26,10 @@ Welcome to Listify, your personal task management assistant! Stay organized and 
 
 - **JavaScript:** Enhances interactivity and provides dynamic features for a smooth user experience.
 
+## Mobile Compatibility
+
+Please note that Listify has not been optimized for mobile devices. It may not look proper on certain screens, as no media queries have been implemented. We recommend using Listify on desktop or larger screens for the best experience.
+
 ## Getting Started
 
 To start using the To-Do List app, simply visit the live website [here](https://listify-5c4db7d4f276.herokuapp.com/accounts/login/?next=/) and create your account. Once logged in, you can start organizing your tasks with ease.
@@ -36,6 +40,4 @@ To start using the To-Do List app, simply visit the live website [here](https://
 
 Your feedback is valuable! If you have suggestions or encounter any issues, please feel free to [create an issue](https://github.com/your-username/to-do-list/issues).
 
-
 Let's stay organized and get things done together!
-
