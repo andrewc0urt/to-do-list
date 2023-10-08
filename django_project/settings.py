@@ -179,6 +179,11 @@ MESSAGE_TAGS = {
 # Tell Django the new CustomUser class
 AUTH_USER_MODEL = 'todolist_app.CustomUser'
 
+# Configure session expiration behavior: When set to True, user sessions expire
+# when the browser is closed, ensuring that users need to log in again when they
+# revisit the site. Set to False to use a fixed session timeout duration.
+SESSION_EXPIRE_AT_BROWSER_CLOSE = os.environ.get('SESSION_EXPIRE_AT_BROWSER_CLOSE')
+
 
 # Configure Django App for Heroku.
 import django_on_heroku
