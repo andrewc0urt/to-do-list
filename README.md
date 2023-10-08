@@ -38,6 +38,6 @@ To start using the To-Do List app, simply visit the live website [here](https://
 
 ## Feedback
 
-Your feedback is valuable! If you have suggestions or encounter any issues, please feel free to [create an issue](https://github.com/your-username/to-do-list/issues).
+Your feedback is valuable! If you have suggestions or encounter any issues, please feel free to [create an issue](https://github.com/andrewc0urt/to-do-list/issues).
 
 Let's stay organized and get things done together!
